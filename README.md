@@ -22,7 +22,7 @@ Run `npm run start` from the root of the repo. This command is not necessary to 
 Run `npm run test-istanbul` from the root of the repo. This command will:
 1) cleans test results and code coverage directories to make sure we are always on a fresh state.
 2) updates the `angular.json` file that is at the root of the repo so that the Angular app will be instrumented using istanbul.
-3) runs the playwright tests at /tests/babel-istanbul. This uses a [playwright.config.ts](/tests/babel-istanbul/playwright.config.ts) and [base fixture](/tests/babel-istanbul/base-fixture.ts) configured to collect code coverage from istanbul.
+3) runs the playwright tests at `/tests/babel-istanbul`. This uses a [playwright.config.ts](/tests/babel-istanbul/playwright.config.ts) and [base fixture](/tests/babel-istanbul/base-fixture.ts) configured to collect code coverage from istanbul.
 4) executes the [nyc](https://github.com/istanbuljs/nyc) command to generate an html report and lcov file at `/coverage`.
 
 After running `npm run test-istanbul` you can open the code coverage report by running `npm run open-istanbul-coverage`.
@@ -32,13 +32,13 @@ After running `npm run test-istanbul` you can open the code coverage report by r
 Run `npm run test-monocart` from the root of the repo. This command will:
 1) cleans test results and code coverage directories to make sure we are always on a fresh state.
 2) updates the `angular.json` file that is at the root of the repo.
-3) runs the playwright tests at /tests/monocart. This uses a [playwright.config.ts](/tests/monocart/playwright.config.ts) and [example.spec.ts test](/tests/monocart/example.spec.ts) configured to collect code coverage using playwright's coverage api (V8) and then produce a report using `monocart-reporter`.
+3) runs the playwright tests at `/tests/monocart`. This uses a [playwright.config.ts](/tests/monocart/playwright.config.ts) and [example.spec.ts test](/tests/monocart/example.spec.ts) configured to collect code coverage using playwright's coverage api (V8) and then produce a report using `monocart-reporter`.
 
 After running `npm run test-monocart` you can open the code coverage report by running `npm run open-monocart-coverage`.
 
 ## Potential bug
 
-When instrumenting the playwright tests using [istanbul](https://github.com/gotwarlost/istanbul) via the [babel-plugin-istanbul plugin](https://github.com/istanbuljs/babel-plugin-istanbul) the code coverage shows accurately whilst when using [monocart-reporter](https://github.com/cenfun/monocart-reporter) some lines that should be covered show as uncovered even though there's an indication those lines have been executed X number of times.
+When instrumenting the playwright tests using [istanbul](https://github.com/gotwarlost/istanbul) via the [babel-plugin-istanbul plugin](https://github.com/istanbuljs/babel-plugin-istanbul) the code coverage shows accurately whilst when using `V8` and [monocart-reporter](https://github.com/cenfun/monocart-reporter) some lines that should be covered show as uncovered even though there's an indication those lines have been executed X number of times.
 
 > please be patient, the npm commands to execute the tests take about 20s to complete on my machine.
 
