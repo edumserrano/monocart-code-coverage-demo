@@ -1,0 +1,39 @@
+<h1 id="page-title">Where do you study or work?</h1>
+
+<div id="filter-box-container">
+  <input
+    #searchInput
+    id="filter-box"
+    type="text"
+    placeholder="Search for your institution"
+    autocomplete="off"
+    spellcheck="false"
+    autofocus
+    [(ngModel)]="viewModel.filterText"
+  />
+  <div id="search-icon">
+    <i class="icon la-Search"></i>
+  </div>
+</div>
+
+<!-- Filtered institutions list -->
+<ng-container *ngIf="viewModel.showFilteredInstitutions">
+  <app-institutions-list
+    [institutions]="viewModel.filteredInstitutions"
+    [highlightText]="viewModel.filterText"
+    (institutionSelected)="viewModel.onFilteredInstitutionSelectedAsync($event)"
+  ></app-institutions-list>
+  <div id="help-message">
+    Can't find your institution? You might not be enabled for this type of sign in. Please contact
+    your library helpdesk for assistance.
+  </div>
+</ng-container>
+<!-- Recently used list -->
+<ng-container *ngIf="viewModel.showRecentlyUsed">
+  <div id="recently-used">Recently used:</div>
+  <app-institutions-list
+    [institutions]="viewModel.recentlyUsedInstitutions"
+    (institutionSelected)="viewModel.onRecentlyUsedInstitutionSelectedAsync($event)"
+  >
+  </app-institutions-list>
+</ng-container>

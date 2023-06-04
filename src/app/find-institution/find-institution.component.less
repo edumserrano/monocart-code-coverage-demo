@@ -1,0 +1,91 @@
+@import "/src/styles/colours.less";
+
+#page-title {
+  color: white;
+  width: 90%;
+  margin: auto;
+  font-size: 48px;
+  font-weight: lighter;
+  text-align: left;
+  border-bottom: 1px solid @light-red;
+
+  @media (max-width: 375px) {
+    font-size: 32px;
+  }
+}
+
+#filter-box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  width: 90%;
+  height: 64px;
+  margin: 24px auto;
+
+  #filter-box {
+    width: 100%;
+    padding: 0px 32px;
+
+    font-size: 18px;
+    color: @font-grey;
+
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  #search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 84px;
+    width: 84px;
+    height: 100%;
+    font-size: 30px;
+
+    background: transparent linear-gradient(53deg, #ff302e 0%, #ff1563 100%) 0% 0% no-repeat padding-box;
+
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  @media (max-width: 375px) {
+    height: 56px;
+
+    #filter-box {
+      font-size: 16px;
+      padding: 0px 16px;
+    }
+
+    #search-icon {
+      width: 56px;
+      min-width: 56px;
+    }
+  }
+}
+
+#recently-used {
+  width: 80%;
+  height: 50px;
+  margin: 24px auto 0px;
+  color: white;
+  font-size: 28px;
+  text-align: left;
+
+  @media (max-width: 375px) {
+    font-size: 18px;
+  }
+}
+
+#help-message {
+  width: 80%;
+  margin: 24px 80px;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+}

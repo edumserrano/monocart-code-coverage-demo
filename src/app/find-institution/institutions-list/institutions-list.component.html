@@ -1,0 +1,15 @@
+<div class="institution-list-wrapper">
+  <ul
+    class="institution-list-column"
+    *ngFor="let columnItems of institutionList; trackBy: trackByColumnIdx"
+  >
+    <li class="institution-item" *ngFor="let item of columnItems; trackBy: trackByInstitution">
+      <div
+        [innerHTML]="item.name | highlight : highlightText : highlightStyle | safe : 'html'"
+        (click)="onInstitutionSelected(item)"
+        (keypress)="onInstitutionSelected(item)"
+        tabindex="0"
+      ></div>
+    </li>
+  </ul>
+</div>

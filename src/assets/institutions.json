@@ -1,0 +1,234 @@
+[
+  {
+    "id": "abertay-university",
+    "name": "Abertay University",
+    "onCampusSignInLink": "https://www.bing.com/"
+  },
+  {
+    "id": "aberystwyth-university",
+    "name": "Aberystwyth University",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "anglia-ruskin-university",
+    "name": "Anglia Ruskin University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "arden-university",
+    "name": "Arden University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "canterbury-christ-church-university",
+    "name": "Canterbury Christ Church University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "cardiff-metropolitan-university",
+    "name": "Cardiff Metropolitan University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "cardiff-university",
+    "name": "Cardiff University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "carlow-it",
+    "name": "Carlow IT",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "city-university-london",
+    "name": "City University London",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "coventry-university",
+    "name": "Coventry University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "de-montfort-university",
+    "name": "De Montfort University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "durham-university",
+    "name": "Durham University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "edge-hill-university",
+    "name": "Edge Hill University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "edinburgh-napier-university",
+    "name": "Edinburgh Napier University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "glasgow-caledonian-university",
+    "name": "Glasgow Caledonian University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  }, 
+  {
+    "id": "leeds-trinity-university",
+    "name": "Leeds Trinity University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "letterkenny-inst-of-technology",
+    "name": "Letterkenny Inst of Technology",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "limerick-instit-of-technology",
+    "name": "limerick Instit Of Technology",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "liverpool-john-moores-university",
+    "name": "Liverpool John Moores University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "london-metropolitan-university",
+    "name": "London Metropolitan University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "london-school-of-economics-and-political-science",
+    "name": "London School of Economics and Political Science",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "loughborough-university",
+    "name": "Loughborough University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "swansea-university",
+    "name": "Swansea University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "teesside-university",
+    "name": "Teesside University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "the-honorable-society-of-kings-inns",
+    "name": "The Honorable Society of King's Inns",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "the-university-of-law",
+    "name": "The University of Law",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "ulster-university",
+    "name": "Ulster University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-college-london",
+    "name": "University College London",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-aberdeen",
+    "name": "University of Aberdeen",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-glasgow",
+    "name": "University of Glasgow",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-gloucestershire",
+    "name": "University of Gloucestershire",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-hertfordshire",
+    "name": "University of Hertfordshire",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-huddersfield",
+    "name": "University of Huddersfield",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-Hull",
+    "name": "University of Hull",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-kent",
+    "name": "University of Kent",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "university-of-leeds",
+    "name": "University of Leeds",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "york-st-john-university",
+    "name": "York St John University",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "law-school",
+    "name": "Law School",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  },
+  {
+    "id": "community-college",
+    "name": "community college",
+    "onCampusSignInLink": "https://www.bing.com/",
+    "offCampusSignInLink": "https://www.google.com/"
+  }
+]
