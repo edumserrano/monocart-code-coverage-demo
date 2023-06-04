@@ -7,7 +7,7 @@
 
 # Monocart code coverage demo
 
-This is a demo repo to check a potential bug in [monocart-reporter](https://github.com/cenfun/monocart-reporter) related with code coverage tracked in monocart-reporter#29.
+This is a demo repo to check a potential bug in [monocart-reporter](https://github.com/cenfun/monocart-reporter) related with code coverage tracked in cenfun/monocart-reporter#29.
 
 The repo consists of an Angular app running playwright tests. The aim is to get accurate code coverage from the playwright tests that run the Angular app via playwright's `webServer`.
 
