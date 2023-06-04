@@ -15,6 +15,8 @@ const _webServerUrl = `http://127.0.0.1:${_webServerPort}`;
 const _testsDir = "./";
 const _testsOutputBaseDir = `${_testsDir}/test-results`;
 const _testReportersOutputBaseDir = `${_testsOutputBaseDir}/reporters`;
+// monocart reporter dirs are NOT relative to the playwright config
+const _monocartReporterOutputDir = `./tests/monocart/test-results/reporters/monocart`;
 
 export default defineConfig({
   testDir: _testsDir,
@@ -36,8 +38,8 @@ export default defineConfig({
       "monocart-reporter",
       {
         name: "Playwright Monocart Report",
-        outputFolder: `${_testReportersOutputBaseDir}/monocart`,
-        outputFile: `${_testReportersOutputBaseDir}/monocart/index.html`,
+        outputFolder: `${_monocartReporterOutputDir}`,
+        outputFile: `${_monocartReporterOutputDir}/index.html`,
         coverage: {
           // excludeDistFile: true,
           // unpackSourceMap: true,
