@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "start": "npx ng version && npx ng serve",
-    "test-istanbul": "npm run clean-istanbul && npx playwright test --config ./tests/babel-istanbul/playwright.config.ts && npx nyc report",
-    "clean-istanbul": "rimraf ./.nyc_output ./coverage"
+    "test-istanbul": "npm run clean-istanbul && npm run setup-istanbul && npx playwright test --config ./tests/babel-istanbul/playwright.config.ts && npx nyc report",
+    "test-monocart": "npm run clean-monocart && npx playwright test --config ./tests/monocart/playwright.config.ts",
+    "clean-istanbul": "rimraf ./.nyc_output ./coverage ./tests/babel-istanbul/test-results",
+    "clean-monocart": "rimraf ./tests/monocart/test-results",
+    "setup-istanbul": "npx cpy ./angular-configs/angular-babel-istanbul.json ./ --flat --rename=angular.json",
+    "setup-monocart": "npx cpy ./angular-configs/angular-monocart.json ./ --flat --rename=angular.json"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +38,7 @@
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
     "@playwright/test": "^1.34.3",
     "babel-plugin-istanbul": "^6.1.1",
+    "cpy-cli": "^4.2.0",
     "monocart-reporter": "^1.6.28",
     "nyc": "^15.1.0",
     "rimraf": "^5.0.1",

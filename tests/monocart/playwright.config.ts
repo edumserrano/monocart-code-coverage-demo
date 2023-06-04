@@ -1,16 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 import z from "zod";
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
-
 /*
  * Validating environment variables with zod
  * https://jfranciscosousa.com/blog/validating-environment-variables-with-zod/
@@ -41,9 +31,20 @@ export default defineConfig({
   workers: _env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
+    ["html", { open: 'never', outputFolder: `${_testReportersOutputBaseDir}/html` }],
     [
-      "html",
-      { open: "never", outputFolder: `${_testReportersOutputBaseDir}/html` },
+      "monocart-reporter",
+      {
+        name: "Playwright Monocart Report",
+        outputFolder: `${_testReportersOutputBaseDir}/monocart`,
+        outputFile: `${_testReportersOutputBaseDir}/monocart/index.html`,
+        coverage: {
+          // excludeDistFile: true,
+          // unpackSourceMap: true,
+          sourceFilter: (sourceName: any) => sourceName.search(/\/src\//) !== -1,
+          // entryFilter: (entry: any) => entry.type !== "css",
+        },
+      },
     ],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

@@ -43,7 +43,7 @@ testem.log
 Thumbs.db
 
 # Playwright
-/test-results/
+test-results
 /playwright-report/
 /playwright/.cache/
 /tests/playwright-out
