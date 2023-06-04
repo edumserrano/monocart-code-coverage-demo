@@ -21,8 +21,9 @@ const _envSchema = z.object({
 const _env = _envSchema.parse(process.env);
 const _webServerPort = 4999;
 const _webServerUrl = `http://127.0.0.1:${_webServerPort}`;
-const _testsDir = "./tests";
-const _testsOutputBaseDir = `${_testsDir}/playwright-out`; // change to /test-results
+// filepaths are relative to the playwright config
+const _testsDir = "./";
+const _testsOutputBaseDir = `${_testsDir}/test-results`;
 const _testReportersOutputBaseDir = `${_testsOutputBaseDir}/reporters`;
 
 export default defineConfig({
@@ -40,7 +41,7 @@ export default defineConfig({
     workers: _env.CI ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter: [
-        // ["html", { outputFolder: `${_testReportersOutputBaseDir}/html` }],
+        ["html", { outputFolder: `${_testReportersOutputBaseDir}/html` }],
         // [
         //     "monocart-reporter",
         //     {
