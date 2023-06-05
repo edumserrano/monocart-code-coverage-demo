@@ -43,7 +43,7 @@ export default defineConfig({
         coverage: {
           // excludeDistFile: true,
           // unpackSourceMap: true,
-          sourceFilter: (sourceName: any) => sourceName.search(/\/src\//) !== -1,
+          sourceFilter: (sourceName: any) => sourceName.search(/src\//) !== -1,
           // entryFilter: (entry: any) => entry.type !== "css",
         },
       },
