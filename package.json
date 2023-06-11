@@ -41,7 +41,7 @@
     "@playwright/test": "^1.34.3",
     "babel-plugin-istanbul": "^6.1.1",
     "cpy-cli": "^4.2.0",
-    "monocart-reporter": "^1.6.29",
+    "monocart-reporter": "^1.6.33",
     "nyc": "^15.1.0",
     "open-cli": "^7.2.0",
     "rimraf": "^5.0.1",
