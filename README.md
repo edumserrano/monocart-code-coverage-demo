@@ -22,9 +22,14 @@ See [here](#potential-bug) for a description of the bug.
 
 ## How to run the app
 
-Run `npm run start` from the root of the repo. This command is not necessary to reproduce the bug but might be useful to know in case you want to run the app.
+From the root of the repo run `npm i` to install the required packages and then run `npm run start` to start the app. Running the app is not necessary to reproduce the bug but might be useful to know in case you want to check out app.
 
 ## How to run tests with istanbul code coverage
+
+> [!IMPORTANT]  
+>
+> Make sure you have the required dependencies installed before running the tests. From the root of the repo run `npm i` to install all the required packaged and then and then `npx playwright install` to install the browsers required by playwright.
+>
 
 Run `npm run test-istanbul` from the root of the repo. This command will:
 1) cleans test results and code coverage directories to make sure we are always on a fresh state.
@@ -36,6 +41,11 @@ After running `npm run test-istanbul` you can open the code coverage report by r
 
 ## How to run tests with V8 code coverage and monocart-reporter
 
+> [!IMPORTANT]  
+>
+> Make sure you have the required dependencies installed before running the tests. From the root of the repo run `npm i` to install all the required packaged and then and then `npx playwright install` to install the browsers required by playwright.
+>
+
 Run `npm run test-monocart` from the root of the repo. This command will:
 1) cleans test results and code coverage directories to make sure we are always on a fresh state.
 2) updates the `angular.json` file that is at the root of the repo.
@@ -44,6 +54,11 @@ Run `npm run test-monocart` from the root of the repo. This command will:
 After running `npm run test-monocart` you can open the code coverage report by running `npm run open-monocart-coverage`.
 
 ## Potential bug
+
+> [!IMPORTANT]  
+>
+> Make sure you have the required dependencies installed before running the tests. From the root of the repo run `npm i` to install all the required packaged and then and then `npx playwright install` to install the browsers required by playwright.
+>
 
 When instrumenting the playwright tests using [istanbul](https://github.com/gotwarlost/istanbul) via the [babel-plugin-istanbul plugin](https://github.com/istanbuljs/babel-plugin-istanbul) the code coverage shows accurately whilst when using `V8` and [monocart-reporter](https://github.com/cenfun/monocart-reporter) some lines that should be covered show as uncovered even though there's an indication those lines have been executed X number of times.
 
@@ -73,3 +88,4 @@ The images below show a part of the code coverage for the `find-institution.view
   - **Without** istanbul instrumentation, there's nothing that needs to be done to the default `angular.json` file you get when creating an Angular app. 
   - **With** istanbul istrumentation, you have to be able to extend angular's webpack configuration so that it runs the [babel-plugin-istanbul plugin](https://github.com/istanbuljs/babel-plugin-istanbul) which will instrument your code. I followed the idea described in [Use Istanbul coverage collection with Playwright Test](https://github.com/mxschmitt/playwright-test-coverage) and applied it to an angular project. To extend angular's webpack configuration I used [ngx-build-plus](https://www.npmjs.com/package/ngx-build-plus).
 - The code of the app has been stripped down to a minimum to reproduce the issue with code coverage so it might not make much sense. The code itself is irrelevant, what matters is understanding why the code coverage shows differently.
+- Fore more information about getting code coverage to work with Playwright please read [this](https://github.com/microsoft/playwright/issues/7030#issuecomment-1575606073) and [this](https://github.com/microsoft/playwright/issues/7030#issuecomment-1672963317).
