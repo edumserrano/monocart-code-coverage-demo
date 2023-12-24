@@ -1,10 +1,13 @@
+# Monocart code coverage demo
+
+- [Description](#description)
 - [How to run the app](#how-to-run-the-app)
 - [How to run tests with istanbul code coverage](#how-to-run-tests-with-istanbul-code-coverage)
 - [How to run tests with V8 code coverage and monocart-reporter](#how-to-run-tests-with-v8-code-coverage-and-monocart-reporter)
 - [Potential bug](#potential-bug)
 - [Notes](#notes)
 
-# Monocart code coverage demo
+## Description
 
 > [!IMPORTANT]
 > 
