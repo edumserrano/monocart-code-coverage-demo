@@ -1,17 +1,23 @@
-- [Monocart code coverage demo](#monocart-code-coverage-demo)
-  - [How to run the app](#how-to-run-the-app)
-  - [How to run tests with istanbul code coverage](#how-to-run-tests-with-istanbul-code-coverage)
-  - [How to run tests with V8 code coverage and monocart-reporter](#how-to-run-tests-with-v8-code-coverage-and-monocart-reporter)
-  - [Potential bug](#potential-bug)
-  - [Notes](#notes)
-
 # Monocart code coverage demo
 
-> **Warning**
-> The bug reported by this demo has been fixed. The fix was simple and is described in cenfun/monocart-reporter#29 and implemented in the `fix` branch. Use this [compare view](https://github.com/edumserrano/monocart-code-coverage-demo/compare/main...fix) to see the changed files.
+- [Description](#description)
+- [How to run the app](#how-to-run-the-app)
+- [How to run tests with istanbul code coverage](#how-to-run-tests-with-istanbul-code-coverage)
+- [How to run tests with V8 code coverage and monocart-reporter](#how-to-run-tests-with-v8-code-coverage-and-monocart-reporter)
+- [Potential bug](#potential-bug)
+- [Notes](#notes)
 
-> **Note**
-> This repo is still useful as it shows two ways to get code coverage working on playwright, one with `instanbul` and one using `V8+monocart-reporter`. For those interested in playwright and code coverage you might find it helpful to read [this comment](https://github.com/microsoft/playwright/issues/7030#issuecomment-1575606073) which explains my journey into getting code coverage working on playwright.
+## Description
+
+> [!IMPORTANT]
+> 
+> If you're interested in learning how to get code coverage for Playwright tests then checkout this repo instead [edumserrano/playwright-adventures](https://github.com/edumserrano/playwright-adventures).
+> 
+
+> [!WARNING]
+> The bug reported by this demo has been fixed. The fix was simple and is described in cenfun/monocart-reporter#29 and implemented in the `fix` branch. Use this [compare view](https://github.com/edumserrano/monocart-code-coverage-demo/compare/main...fix) to see the changed files.
+>
+> This repo might still be useful to show two ways to get code coverage working on playwright, one with `instanbul` and one using `V8+monocart-reporter`.
 > 
 
 This is a demo repo to check a potential bug in [monocart-reporter](https://github.com/cenfun/monocart-reporter) related with code coverage tracked in cenfun/monocart-reporter#29.
